@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Now - FunZone</title>
+  <link rel="shortcut icon" href="images/new logo.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="booknow.css">
+
+</head>
+
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Logo + Text -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img class="logo-image" src="images/new logo.png" alt="Logo" />
+        <!-- <span>Fun Zone</span> -->
+      </a>
+
+      <!-- Toggle Button (Mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav nav-links">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="memories.html">Memories</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="activitiesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Activities
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="activitiesDropdown">
+              <li><a class="dropdown-item" href="experience.html">Experience</a></li>
+              <li><a class="dropdown-item" href="Leisure & Dining .html">Leisure & Dining</a></li>
+              <li><a class="dropdown-item" href="park charcter .html">Parks & Characters</a></li>
+              <li><a class="dropdown-item" href="whats up .html">What's Up</a></li>
+              <li><a class="dropdown-item" href="park information.html">Park Information</a></li>
+              <li><a class="dropdown-item" href="Business Opportunities.html">Business Opportunities</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link cta" href="booknow.html">BOOK NOW</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+<div class="hero-section">
+    <div class="glass-header">
+      <h1>BOOKNOW</h1>
+      <h3>Home &gt; booknow</h3>
+    </div>
+  </div>
+  <!-- Booking Notification -->
+  <div class="UDXfQx" id="popup">Your ticket has been booked!</div>
+
+  <!-- Book Now Section -->
+  <div class="xKqPly">
+    <div class="vTrMbN">Book Your Ticket Now</div>
+    <div class="AKzduy">
+      <!-- Left Form -->
+      <div class="IqzpHv">
+        <form class="nUEBpM" id="formLeft">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Name" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" pattern="[0-9]{10}" required placeholder="10-digit number" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Email" required />
+
+          <label for="date">Date of Visit</label>
+          <input type="date" id="date" required />
+        </form>
+      </div>
+
+      <!-- Right Form -->
+      <div class="ERklwu">
+        <form class="nUEBpM" id="formRight">
+          <label for="adultTickets">Adult Tickets ($50 each)</label>
+          <input type="number" id="adultTickets" min="0" value="0" />
+
+          <label for="kidTickets">Kid Under 5 Tickets ($30 each)</label>
+          <input type="number" id="kidTickets" min="0" value="0" />
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="3" placeholder="Message"></textarea>
+
+          <div class="FbdPlx" id="priceOutput">Total: $0</div>
+
+          <div class="VjKxEv">
+            <input type="checkbox" id="termsCheck" required />
+            <label for="termsCheck">I agree to the <a href="#">terms & conditions</a></label>
+          </div>
+
+          <button type="submit">Submit Ticket</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-3 col-12 mb-4">
+          <img class="footer-logo-second" src="images/new logo.png" alt="logo">
+          <div class="footer-icons">
+            <a href="#"><i class="fab fa-wordpress"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 col-12 mb-4">
+          <h6>NEW YORK</h6>
+          <p class="mb-1">685 Saadien Ave, 2th Floor</p>
+          <p>New York, 1240 NYC</p>
+          <h6 class="mt-4">LONDON</h6>
+          <p class="mb-1">685 Happiness Ave, 6th Floor</p>
+          <p>London, 6030 UK</p>
+        </div>
+        <div class="col-md-3 col-12 mb-4">
+          <h6>FOOTER MENU</h6>
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">About</a>
+          <a href="#">Shop</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="col-md-3 col-12 mb-4">
+          <h6>QUICK LINKS</h6>
+          <a href="#">INSTAGRAM</a>
+          <a href="#">YOUTUBE</a>
+          <a href="#">X</a>
+          <a href="#">LINKEDIN</a>
+          <a href="#">FACEBOOK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const popup = document.getElementById('popup');
+    const formLeft = document.getElementById('formLeft');
+    const formRight = document.getElementById('formRight');
+    const adultField = document.getElementById('adultTickets');
+    const kidField = document.getElementById('kidTickets');
+    const priceOutput = document.getElementById('priceOutput');
+
+    const cost = { adult: 50, kid: 30 };
+
+    function calculateTotal() {
+      const a = parseInt(adultField.value) || 0;
+      const k = parseInt(kidField.value) || 0;
+      priceOutput.textContent = `Total: $${(a * cost.adult) + (k * cost.kid)}`;
+    }
+
+    adultField.addEventListener('input', calculateTotal);
+    kidField.addEventListener('input', calculateTotal);
+
+    formRight.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (!document.getElementById('termsCheck').checked) {
+        alert("Please agree to the terms and conditions.");
+        return;
+      }
+
+      popup.style.display = 'block';
+      popup.style.animation = 'none';
+      popup.offsetHeight;
+      popup.style.animation = '';
+      formLeft.reset();
+      formRight.reset();
+      calculateTotal();
+
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 4000);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
